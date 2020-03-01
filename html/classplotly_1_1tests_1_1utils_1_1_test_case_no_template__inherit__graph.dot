@@ -1,0 +1,52 @@
+digraph "plotly.tests.utils.TestCaseNoTemplate"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="plotly.tests.utils.TestCase\lNoTemplate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestCase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="plotly.tests.test_core.test\l_graph_objs.test_figure.FigureTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__core_1_1test__graph__objs_1_1test__figure_1_1_figure_test.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="plotly.tests.test_core.test\l_graph_objs.test_template.TestTo\lTemplated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__core_1_1test__graph__objs_1_1test__template_1_1_test_to_templated.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="plotly.tests.test_core.test\l_graph_objs.test_to_ordered\l_dict.FigureTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__core_1_1test__graph__objs_1_1test__to__ordered__dict_1_1_figure_test.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestBullet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_bullet.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestChoropleth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_choropleth.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestDendrogram",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_dendrogram.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestDistplot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_distplot.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestFacetGrid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_facet_grid.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestGantt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_gantt.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestQuiver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_quiver.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestScatterPlotMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_scatter_plot_matrix.html",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestStreamline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_streamline.html",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestTernarycontour",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_ternarycontour.html",tooltip=" "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestTrisurf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_trisurf.html",tooltip=" "];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="plotly.tests.test_optional.test\l_figure_factory.test_figure\l_factory.TestViolin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__figure__factory_1_1test__figure__factory_1_1_test_violin.html",tooltip=" "];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="plotly.tests.test_optional.test\l_tools.test_figure_factory.Test2D_\lDensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__tools_1_1test__figure__factory_1_1_test2_d___density.html",tooltip=" "];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="plotly.tests.test_optional.test\l_tools.test_figure_factory.TestAnnotated\lHeatmap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__tools_1_1test__figure__factory_1_1_test_annotated_heatmap.html",tooltip=" "];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="plotly.tests.test_optional.test\l_tools.test_figure_factory.TestFinanceCharts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__tools_1_1test__figure__factory_1_1_test_finance_charts.html",tooltip=" "];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="plotly.tests.test_optional.test\l_tools.test_figure_factory.TestGantt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__tools_1_1test__figure__factory_1_1_test_gantt.html",tooltip=" "];
+  Node1 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="plotly.tests.test_optional.test\l_tools.test_figure_factory.TestQuiver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__tools_1_1test__figure__factory_1_1_test_quiver.html",tooltip=" "];
+  Node1 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="plotly.tests.test_optional.test\l_tools.test_figure_factory.TestTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classplotly_1_1tests_1_1test__optional_1_1test__tools_1_1test__figure__factory_1_1_test_table.html",tooltip=" "];
+}
