@@ -10,3 +10,9 @@ call conda activate plotly-dev
 echo Installing text requirements
 call pip install -r packages/python/plotly/requirements.txt
 call pip install -r packages/python/plotly/optional-requirements.txt
+::Installation of plotly packages
+echo Installing editable plotly packages
+call pip install -e packages/python/plotly/
+call pip install -e packages/python/chart-studio/
+call pip install -e packages/python/plotly-geo/
+echo Installing editable plotly packages completed
