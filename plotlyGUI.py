@@ -3,21 +3,11 @@
 from tkinter import *
 root = Tk()
 
-def printData(firstName, lastName):
-    print(firstName)
-    print(lastName)
-    root.destroy()
-
-def get_input():
-    firstName = entry1.get()
-    lastName = entry2.get()
-    printData(firstName, lastName)
-
-mainFrame = Frame(root)
+mainFrame = LabelFrame(root, text="Plotly Graphical User Interface", padx=100, pady=200)
 mainFrame.grid(column=0,row=0, sticky=(N,W,E,S) )
 mainFrame.columnconfigure(0, weight = 1)
 mainFrame.rowconfigure(0, weight = 1)
-mainFrame.pack(pady = 100, padx = 100)
+mainFrame.pack(padx = 50, pady = 100)
 
 tkvar = StringVar(root)
 
@@ -28,15 +18,26 @@ for line in f:
 
 tkvar.set('2D-Histogram.md')
 
+def change_dropdown(*args):
+	tkvar.trace('w', change_dropdown)
+
+def clickRun():
+	print(tkvar.get())
+	#tkvar.trace('w', change_dropdown)
+
+buttonRun = Button(mainFrame, text="Run", command=clickRun)
+buttonRun.grid(row = 3, column = 1)
 
 popupMenu = OptionMenu(mainFrame, tkvar, *choices)
 Label(mainFrame, text="Select a graph").grid(row = 1, column = 1)
 popupMenu.grid(row = 2, column =1)
 
-def change_dropdown(*args):
-	print(tkvar.get())
 
-tkvar.trace('w', change_dropdown)
-
+'''
+canvas1 = Canvas(root, width = 100, height = 100)
+canvas1.pack()
+entry1 = Entry(root)
+canvas1.create_window(200, 140, window=entry1)
+'''
 root.mainloop()
 f.close()

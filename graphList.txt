@@ -1,4 +1,4 @@
-2D-Histogram.md
+2D-Histogram.md Histogram2d
 2d-histogram-contour.md
 3d-axes.md
 3d-bubble-charts.md
