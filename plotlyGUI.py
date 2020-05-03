@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import plotly.graph_objects as go
 import numpy as np
+from os import listdir
+from os.path import isfile, join
 from tkinter import *
 root = Tk()
 
@@ -12,11 +14,7 @@ mainFrame.pack(padx = 50, pady = 50)
 
 tkvar = StringVar(root)
 
-f = open('graphList.txt', 'r')
-choices = []
-for line in f:
-	choices.append(line)
-
+choices = [f for f in listdir('doc/python') if isfile(join('doc/python', f))]
 tkvar.set('2D-Histogram.md')
 
 # Enter space separated INTEGER values into 'entry 1' and 'entry 2' fields on PlotlyGUI
@@ -79,7 +77,7 @@ canvas1.create_window(200, 140, window=entry1)
 '''
 
 root.mainloop()
-f.close()
+#f.close()
 
 
 
