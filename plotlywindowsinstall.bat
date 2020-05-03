@@ -16,3 +16,11 @@ call pip install -e packages/python/plotly/
 call pip install -e packages/python/chart-studio/
 call pip install -e packages/python/plotly-geo/
 echo Installing editable plotly packages completed
+::Jupyter Notebook Support
+echo Installing Jupyter Notebook Support
+call conda install "notebook>=5.3" "ipywidgets=7.5" -y
+::Ipywidgets development install
+echo Installing Ipywidgets
+call jupyter nbextension enable --py widgetsnbextension
+call jupyter nbextension install --py --symlink --sys-prefix plotlywidget
+call jupyter nbextension enable --py --sys-prefix plotlywidget
