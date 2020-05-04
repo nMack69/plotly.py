@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import plotly.graph_objects as go
+import plotlyGenerics as pg
 import numpy as np
 from os import listdir
 from os.path import isfile, join
@@ -24,6 +24,7 @@ tkvar = StringVar(root)
 choices = [f for f in listdir('doc/python') if isfile(join('doc/python', f))]
 #tkvar.set(choices[0])
 
+<<<<<<< HEAD
 # Enter space separated INTEGER values into 'entry 1' and 'entry 2' fields on PlotlyGUI
 # ex, 1 2 3 4 5 6 etc.
 # Only 3D scatter plots supported at the moment
@@ -52,6 +53,8 @@ def scatterPlot():
 l1 = Label(subFrame, text="")
 l2 = Label(subFrame, text="")
 l3 = Label(subFrame, text="")
+=======
+>>>>>>> 5de90dd6cb704e6ed764fa56003505277ddb211d
 
 def change_dropdown(*args):
 	#subFrame.destroy()
@@ -78,7 +81,8 @@ def clickRun():
 	print(tkvar.get())
 	print(entry1.get())
 	print(entry2.get())
-	scatterPlot()
+	# list(map(int, entry1.get().split())), list(map(int, entry2.get().split()))
+	pg.isosurface_3d(list(map(int, entry1.get().split())), list(map(int, entry2.get().split())), z=[0])
 
 buttonRun = Button(mainFrame, text="Run", command=clickRun)
 buttonRun.grid(row = 5, column = 3)
